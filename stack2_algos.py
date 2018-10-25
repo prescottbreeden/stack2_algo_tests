@@ -16,8 +16,10 @@ def PrintKeysAndValues(obj):
     >>> PrintKeysAndValues(obj)
     key value
     """
-    for k, v in obj.items():
-        print(k, v)
+    # for k, v in obj.items():
+    #     print(k, v)
+    for key in obj:
+        print(key.value)
 
 
 def ReverseArray(arr):
