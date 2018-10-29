@@ -19,7 +19,7 @@ def PrintKeysAndValues(obj):
     # for k, v in obj.items():
     #     print(k, v)
     for key in obj:
-        print(key.value)
+        print(key, obj[key])
 
 
 def ReverseArray(arr):
@@ -307,3 +307,8 @@ class CircQueue:
             self.arr.pop(0)
         else:
             raise AttributeError('Queue is empty.')
+
+
+if __name__ == '__main__':
+    print(ReverseArray([1, 2, 3, 4, 5]))
+    help(ReverseArray)
